@@ -1,5 +1,9 @@
-package com.andrewvalles.nbastatswebapp;
+package com.andrewvalles.nbastatswebapp.service;
 
+import com.andrewvalles.nbastatswebapp.model.ApiResponse;
+import com.andrewvalles.nbastatswebapp.model.PlayerStatsModel;
+import com.andrewvalles.nbastatswebapp.model.PlayerPreviewModel;
+import com.andrewvalles.nbastatswebapp.model.PlayerProfileModel;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
@@ -64,7 +68,7 @@ public class PlayerService {
         entity = new HttpEntity<>(headers);
 
         ResponseEntity<List<PlayerStatsModel>> response = restTemplate.exchange(
-                baseUrl + "/players/" + id,
+                baseUrl + "/players/" + id + "/statistics",
                 HttpMethod.GET,
                 entity,
                 new ParameterizedTypeReference<List<PlayerStatsModel>>() {}

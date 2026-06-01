@@ -1,5 +1,9 @@
-package com.andrewvalles.nbastatswebapp;
+package com.andrewvalles.nbastatswebapp.controller;
 
+import com.andrewvalles.nbastatswebapp.model.PlayerPreviewModel;
+import com.andrewvalles.nbastatswebapp.model.PlayerProfileModel;
+import com.andrewvalles.nbastatswebapp.service.PlayerService;
+import com.andrewvalles.nbastatswebapp.model.PlayerStatsModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;

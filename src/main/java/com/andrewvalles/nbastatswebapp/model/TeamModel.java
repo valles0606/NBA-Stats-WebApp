@@ -1,4 +1,4 @@
-package com.andrewvalles.nbastatswebapp;
+package com.andrewvalles.nbastatswebapp.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
