@@ -9,7 +9,7 @@ for NBA players and retrieve their information using the balldontlie.io API.
 - JavaScript
 - Spring Boot
 - Maven
-- balldontlie.io API
+- highlightly.net API
 
 ## Endpoints
 ### Get Player Info
