@@ -6,26 +6,35 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #1a1a2e;
-    color: #ffffff;
+    background-color: #0d0d1a;
+    color: #e0e0e0;
     min-height: 100vh;
 }
 
+#top-navigation-bar {
+    background-color: #0a0a14;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #5248b8;
+}
+
 header {
-    background-color: #16213e;
-    padding: 20px 40px;
-    border-bottom: 3px solid #e94560;
+    background-color: #0f0f1f;
+    padding: 30px 40px;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
-    color: #e94560;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: #7c6ff7;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
 }
 
 header p {
-    color: #a8a8b3;
-    margin-top: 5px;
+    color: #888899;
+    font-size: 1rem;
 }
 
 main {
@@ -34,30 +43,30 @@ main {
     padding: 0 20px;
 }
 
-#search-section {
+#search-bar {
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
 }
 
-#search-text {
+#search-input {
     flex: 1;
     padding: 12px 16px;
     border-radius: 8px;
-    border: 2px solid #e94560;
-    background-color: #16213e;
-    color: #ffffff;
+    border: 2px solid #5248b8;
+    background-color: #0f0f1f;
+    color: #e0e0e0;
     font-size: 1rem;
     outline: none;
 }
 
-#search-text::placeholder {
-    color: #a8a8b3;
+#search-input::placeholder {
+    color: #666677;
 }
 
 #search-button {
     padding: 12px 24px;
-    background-color: #e94560;
+    background-color: #5248b8;
     color: white;
     border: none;
     border-radius: 8px;
@@ -67,7 +76,7 @@ main {
 }
 
 #search-button:hover {
-    background-color: #c73652;
+    background-color: #4338a0;
 }
 
 #results-section {
@@ -78,49 +87,50 @@ main {
 }
 
 #results-section div {
-    background-color: #16213e;
+    background-color: #0f0f1f;
     padding: 14px 20px;
     border-radius: 8px;
-    border-left: 4px solid #e94560;
+    border-left: 4px solid #5248b8;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 #results-section div:hover {
-    background-color: #0f3460;
+    background-color: #16162a;
 }
 
 #results-section p {
     font-size: 1rem;
     font-weight: 500;
+    color: #e0e0e0;
 }
 
 #player-detail-section {
-    background-color: #16213e;
+    background-color: #0f0f1f;
     padding: 24px;
     border-radius: 12px;
-    border-top: 4px solid #e94560;
+    border-top: 4px solid #5248b8;
 }
 
 #player-detail-section h2 {
     font-size: 1.8rem;
-    color: #e94560;
+    color: #7c6ff7;
     margin-bottom: 16px;
 }
 
 #player-detail-section p {
     padding: 8px 0;
-    border-bottom: 1px solid #0f3460;
-    color: #d1d1e0;
+    border-bottom: 1px solid #1a1a2e;
+    color: #c0c0d0;
 }
 
 #stats-section h3 {
     font-size: 1.2rem;
-    color: #e94560;
+    color: #7c6ff7;
     margin: 20px 0 10px;
 }
 
 #stats-section p {
     font-size: 0.9rem;
-    color: #a8a8b3;
+    color: #9090a8;
 }

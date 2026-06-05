@@ -1,11 +1,10 @@
 const searchButton = document.getElementById("search-button");
-const playerInput = document.getElementById("search-text");
+const playerInput = document.getElementById("search-input");
 const resultsSection = document.getElementById("results-section");
 const playerDetailSection = document.getElementById("player-detail-section");
 
 searchButton.addEventListener("click", function() {
     const name = playerInput.value;
-
     resultsSection.innerHTML = "";
     playerDetailSection.innerHTML = "";
 
@@ -17,7 +16,6 @@ searchButton.addEventListener("click", function() {
     fetch(`/players?name=${name}`)
         .then(response => response.json())
         .then(data => {
-            resultsSection.innerHTML = "";
             data.forEach(player => {
                 resultsSection.innerHTML += `
                     <div onclick="loadPlayer('${player.id}')">
@@ -47,11 +45,9 @@ function loadPlayer(id) {
                 .then(statsData => {
                     const statsSection = document.getElementById("stats-section");
                     let statsHtml = "<h3>Season Stats</h3>";
-
                     statsData.perSeason[0].stats.forEach(stat => {
                         statsHtml += `<p>${stat.name}: ${stat.value}</p>`;
                     });
-
                     statsSection.innerHTML = statsHtml;
                 });
         });
